@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { useState } from 'react';
+import React from 'react';
 import { ModalBody, ModalFooter, ModalHeader, Button, Modal } from 'reactstrap';
 
 function ImagePreview(props) {
@@ -16,7 +17,7 @@ function ImagePreview(props) {
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader>Image Full View : </ModalHeader>
         <ModalBody>
-          <img src={props.iurl} alt='Full Screen View' />
+          <img src={props.iurl} alt='Full Screen View' className='full' />
         </ModalBody>
         <ModalFooter>
           <Button color='info' onClick={toggle}>
