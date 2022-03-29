@@ -72,3 +72,9 @@ h1 {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 540px) {
+  .page {
+    margin-left: 15%;
+  }
+}
