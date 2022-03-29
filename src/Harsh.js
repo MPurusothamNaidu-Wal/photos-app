@@ -20,7 +20,7 @@ function Allproducts(props) {
       .then((res) => setProduct(res.data), setIsLoading(false));
   }, [PageNo]);
   return (
-    <div>
+    <div className='main'>
       <h1>Displaying Album Number: {PageNo}</h1>
 
       <div className='album py-5 bg-light' id='album'>
